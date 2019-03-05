@@ -26,6 +26,7 @@ module Ror52
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.time_zone = 'Tokyo'
 
     # Don't generate system test files.
     config.generators.system_tests = nil
@@ -35,7 +36,7 @@ module Ror52
       g.javascripts false
       g.helper false
       g.test_framework :rspec,
-      fixtures: true,
+      fixture: true,
       view_specs: false,
       helper_specs: false,
       routing_specs: false,
